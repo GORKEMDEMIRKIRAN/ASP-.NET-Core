@@ -1,0 +1,59 @@
+
+@model ProductViewModel
+
+@* @{
+    Layout="_Layout";
+} *@
+@* Burada layout=null yaparsak aktiflik gider. *@
+@* @{
+    Layout=null;
+} *@
+
+
+@{
+    var popularClass=Model.Pds.Count>2 ? "popular":"";
+    var products=Model.Pds;  // Bu modeli atadığımız değişkeni (Model.Pds) yazdığımız yerlere atayabiliriz.
+    var categoryName=Model.Cty.Name;
+    @* var categories = Model.Categories; *@
+}
+
+
+@section MessageBox
+{
+    <div class="alert alert-warning text-center m-0">
+        You have a message!
+    </div>
+}
+
+@section Scripts
+{
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+}
+
+@section Categories
+{
+    @await Component.InvokeAsync("Categories")
+}
+
+
+
+
+@* Bu kısım _Loyout içindeki "@RenderBody" kısmı eklenicektir. *@
+@* Buradaki row direkt renderbody içine yerleşicektir. *@
+
+
+@if(products.Count == 0)
+{
+    @await Html.PartialAsync("_noproduct")
+}
+else
+{
+    <div class="row">
+        @foreach (var product in products)
+        {    
+            <div class="col-md-3">
+                @await Html.PartialAsync("_product",product)              
+            </div>       
+        }  
+    </div>
+}

@@ -1,0 +1,144 @@
+
+@* ŞİMDİ BURADA LISTEDE YAPTIKLARIMIZI HOME-INDEX ATALIM. *@
+
+
+@* Product liste olduğu için böyle tanımlandı. *@
+@* @model List<Product> *@
+
+@* Artık kategory ve ürünler için ortak bir nesne oluşturduk onu import ediyoruz. *@
+@model ProductViewModel
+
+@* Eğer Ürün sayısı ikiden büyükse Telefonlar category değişkeni renk değiştirsin. *@
+@{
+    var popularClass=Model.Pds.Count>2 ? "popular":"";
+    var products=Model.Pds;  // Bu modeli atadığımız değişkeni (Model.Pds) yazdığımız yerlere atayabiliriz.
+    var categoryName=Model.Cty.Name;
+    @* var categories = Model.Categories; *@
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    @* bootstrap ekledik. *@
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .popular{
+            color:green;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    @await Html.PartialAsync("_navbar")
+
+    <header>
+        @await Html.PartialAsync("_header")
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    @* kategoriler gelecek *@
+                    @* @await Html.PartialAsync("_categories") *@
+                    @await Component.InvokeAsync("Categories")
+                </div>
+                <div class="col-md-9">
+                    @* Ürünler gelecek *@
+                        @if(products.Count == 0)
+                        {
+                            @await Html.PartialAsync("_noproduct")
+                        }
+                        else
+                        {
+                            <div class="row">
+                                @foreach (var product in products)
+                                {    
+                                    <div class="col-md-3">
+                                        @await Html.PartialAsync("_product",product)              
+                                    </div>       
+                                }  
+                            </div>
+                        }
+                </div>
+            </div>        
+        </div>
+    </main>
+
+    
+        @* ilk import ettiğimiz duruma göre cshtml yapısını gösterdik. *@
+        @* ================================================= *@
+            @* <h1>@ViewBag.Category.Name</h1>
+            <div>
+                <p>@Model[0].Name</p>
+                <p>@Model[0].Price</p>
+                <p>@Model[0].Description</p>
+            </div>
+            <div>
+                <p>@Model[1].Name</p>
+                <p>@Model[1].Price</p>
+                <p>@Model[1].Description</p>
+            </div> *@
+        @* ================================================= *@
+
+
+
+        @* Category ve products ortak olarak aldığımız için gösterdik. *@
+        @* Döngü yapılarını "razor" denen bir özellikle yapıyoruz. *@
+        @* ================================================= *@
+            @* <h1>@Model.Cty.Name</h1>
+            <div>
+                <p>@Model.Pds[0].Name</p>
+                <p>@Model.Pds[0].Price</p>
+                <p>@Model.Pds[0].Description</p>
+            </div>
+            <div>
+                <p>@Model.Pds[1].Name</p>
+                <p>@Model.Pds[1].Price</p>
+                <p>@Model.Pds[1].Description</p>
+            </div> *@
+         @* ================================================= *@
+
+
+        @* Döngü yapılarını "razor" denen bir özellikle yapıyoruz. *@
+        @* Şimdi razor yapısıyla döngü içine alalım. *@
+        @* ================================================= *@
+        @* <h1 class="@popularClass">@Model.Cty.Name</h1>
+
+        @if(Model.Pds.Count == 0)
+        {
+            <p style="background-color: yellow;">Ürün yok</p>
+        }
+        else
+        {
+            <ul>
+                @foreach(var product in Model.Pds)
+                {
+                    @if(product.IsApproved)
+                    {
+                        <li>
+                            <div>
+                                <p>@product.Name</p>
+                                <p>@product.Price</p>
+                                <p>@product.Description</p>
+                            </div>
+                        </li>
+                    }
+                    else{
+                        <li style="background-color :red;">
+                            Ürün satışta değil
+                        </li>
+                    }
+
+                }
+            </ul>
+        } *@
+
+
+
+</body>
+</html>

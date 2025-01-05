@@ -1,0 +1,73 @@
+
+
+@* Bu kısımda Layout göreceğiz. *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+
+    @* Bu alt kısımda section tanımladık
+    Index dosyası içinde section bölümü tanımladık.
+    Eğer bölümde tanımlamasak bize hata vermemesi için "false"
+    eklememiz lazım. *@
+
+    @if(IsSectionDefined("MessageBox"))
+    {
+        @RenderSection("MessageBox")
+    }
+    else{
+        <div class="alert alert-primary text-center m-0">
+            Welcome!
+        </div>
+    }
+
+
+    
+    @await Html.PartialAsync("_navbar")
+    <header>
+        @await Html.PartialAsync("_header")
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            @* Bu kısımda "false" ile categories tanımlamamız zorunlu değil *@
+            @if(IsSectionDefined("Categories"))
+            {
+                <div class="row">
+                    <div class="col-md-3">
+                        @RenderSection("Categories",false)
+                    </div>
+                    <div class="col-md-9">
+                        @RenderBody()
+                    </div>
+                </div>
+            }
+            else{
+                <div class="row">
+                    <div class="col-md-12">
+                        @RenderBody()    
+                    </div>
+                </div>
+            }    
+        </div>
+    </main>
+    <footer class="py-3 bg-dark text-white text-center">
+        Shop App | 2025
+    </footer>
+
+
+
+    @RenderSection("Scripts",false)
+
+    
+</body>
+</html>

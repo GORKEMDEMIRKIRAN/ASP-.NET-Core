@@ -1,0 +1,34 @@
+
+@model Product
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    @await Html.PartialAsync("_navbar")
+    @* Bu kısımda viewdata olarak tanımladığımız değerleri bastıralım 
+    genel dosya içerisinde models tanımladığımız için üstte @model yazmadık.
+    _ViewImports.cshtml içinde tanımlandı.*@
+
+    <h1>@ViewData["Category"]</h1>
+    <h4>@(((Product)ViewData["PRD"]).Name)</h4>
+    <h4>@(((Product)ViewData["PRD"]).Price)</h4>
+    <h4>@(((Product)ViewData["PRD"]).Description)</h4>
+
+    <h1>@ViewBag.Category1</h1>
+    <h4>@ViewBag.prd.Name</h4>
+    <h4>@ViewBag.prd.Price</h4>
+    <h4>@ViewBag.prd.Description</h4>
+
+    <h1>@ViewBag.Category1</h1>
+    <h4>@Model.Name</h4>
+    <h4>@Model.Price</h4>
+    <h4>@Model.Description</h4>
+ 
+    
+</body>
+</html>
