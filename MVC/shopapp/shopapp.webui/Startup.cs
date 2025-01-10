@@ -7,10 +7,22 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection; //addscored fonksiyonu
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 
+
+using shopapp.data.Abstract;
+using shopapp.data.Concrete.EfCore;
+
+
+//şimdi shopapp.data içine gidip ilk migration oluştruacağız.
+// shopapp.webui startup project başlangıç ekranı olacak.
+// migration oluştururken shopapp.webui startup project olarak tanımlayacağız.
+//  shopapp.data içine git ve bu kodu yaz.
+// Unutma microsoft.entitframeworkCore.design kurulu olsun yoksa hata alırsın.
+// --dotnet ef migrations add InitialCreate --startup-project ../shopapp.webui
+// "dotnet ef database update --startup-project ../shopapp.webui" startup projeyi tekrar tanımalyarak ile database aktaralım.
 namespace shopapp.webui
 {
     public class Startup
@@ -21,6 +33,12 @@ namespace shopapp.webui
 
             // mvc
             // razor pages
+            // addscored() bu metod generic
+            // ilk sanal sınıf değişkeni,ikinci olarak database değişkenini alıyor.
+            //services.AddScoped<IProductRepository, EfCoreProductRepository>();
+
+            // Ne zmaan ICategoryRepository çağırırsak "efcorecategoryrepository" bize nesne gelecektir.
+            services.AddScoped<ICategoryRepository, EfCoreCategoryRepository>();
             services.AddControllersWithViews();
         }
 
@@ -101,4 +119,5 @@ namespace shopapp.webui
             });
         }
     }
+
 }

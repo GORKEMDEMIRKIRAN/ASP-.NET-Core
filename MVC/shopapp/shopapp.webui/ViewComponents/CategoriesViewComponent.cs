@@ -35,8 +35,10 @@
 
 
 using Microsoft.AspNetCore.Mvc;
-using shopapp.webui.Models;
-using shopapp.webui.Data;
+//using shopapp.webui.Models;
+using shopapp.entity;
+
+//using shopapp.webui.Data;
 
 namespace shopapp.webui.ViewComponents
 {
@@ -44,11 +46,12 @@ namespace shopapp.webui.ViewComponents
     {
         public IViewComponentResult Invoke()
         {
-            if(RouteData.Values["action"].ToString()=="List")
-            {
-                ViewBag.SelectedCategory = RouteData?.Values["id"];
-            }
-            return View(CategoryRepository.Categories);
+            // if(RouteData.Values["action"].ToString()=="List")
+            // {
+            //     ViewBag.SelectedCategory = RouteData?.Values["id"];
+            // }
+            //return View(CategoryRepository.Categories);
+            return View();
         }
     }
 }

@@ -5,12 +5,17 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-using shopapp.webui.Models;
-using shopapp.webui.Data;
+//using shopapp.webui.Models;
+//using shopapp.webui.Data;
+using shopapp.entity;
+using shopapp.data.Abstract;
+
 
 // projemiz içindeki controllers alanını temsil ediyor.
 namespace shopapp.webui.Controllers
 {
+
+    //===========================================================
     // HomeController isminde özel bir sınıf(class)
     // Projeye gelen istekleri karşılayacak olan bir classtır
     // özellik kazandırmamız gerekiyor kalıtım denen bir kavram var.
@@ -26,6 +31,24 @@ namespace shopapp.webui.Controllers
     // homecontroller 2 tane action metoduna sahip
     public class HomeController : Controller
     {
+
+        //===========================================================
+        /* 
+        şimdi bu kısımda SHOPAPP.DATA yani dataaccess katmanından repository
+        entegre edelim.
+        İlk önce csproj dosyasına "shopapp.data" import ettim.
+        "using shopapp.data.Abstract;"
+        */
+        private readonly ICategoryRepository _categoryRepository;  // Dependency Injection
+        private readonly IProductRepository _productRepository;
+
+        //public HomeController(ICategoryRepository categoryRepository)
+        public HomeController(ICategoryRepository categoryRepository)
+        {
+            //this._categoryRepository=categoryRepository;
+            this._categoryRepository=categoryRepository;
+        }
+
         // BU metotda MVC'de action metodu deniyor.
         // localhost:5000/home/index gelir.
 
@@ -62,20 +85,21 @@ namespace shopapp.webui.Controllers
 
 
 
-            var category = new Category {Name="Telefonlar",Description="Telefonlar katıldı"};
+            // var category = new Category {Name="Telefonlar", Description="Telefonlar katıldı"};
 
-            // ViewBag.Category=category;
+            // // ViewBag.Category=category;
 
-            var PVM= new ProductViewModel()
-            {
-                Cty=category,
-                //Pds=products,
-                // Categories=categories
-                Pds=ProductRepository.Products
+            // var PVM= new ProductViewModel()
+            // {
+            //     Cty=category,
+            //     //Pds=products,
+            //     // Categories=categories
+            //     Pds=ProductRepository.Products
 
-            };
+            // };
 
-            return View(PVM);
+            //return View(PVM);
+            return View();
             //==============================================================================================
 
 

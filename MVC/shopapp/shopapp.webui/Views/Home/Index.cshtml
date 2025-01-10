@@ -1,5 +1,5 @@
 
-@model ProductViewModel
+@* @model ProductViewModel *@
 
 @* @{
     Layout="_Layout";
@@ -11,28 +11,34 @@
 
 
 @{
-    var popularClass=Model.Pds.Count>2 ? "popular":"";
-    var products=Model.Pds;  // Bu modeli atadığımız değişkeni (Model.Pds) yazdığımız yerlere atayabiliriz.
-    var categoryName=Model.Cty.Name;
+    //var popularClass=Model.Pds.Count>2 ? "popular":"";
+    //var products=Model.Pds;  // Bu modeli atadığımız değişkeni (Model.Pds) yazdığımız yerlere atayabiliriz.
+    //var categoryName=Model.Cty.Name;
     @* var categories = Model.Categories; *@
-}
+} 
 
 
-@section MessageBox
+@* @section MessageBox
 {
     <div class="alert alert-warning text-center m-0">
         You have a message!
     </div>
-}
+} *@
 
-@section Scripts
+@* @section Header
+{
+    <partial name="_header">
+} *@
+
+
+@* @section Scripts
 {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-}
+} *@
 
-@section Categories
+@* @section Categories
 {
-    @await Component.InvokeAsync("Categories")
+    @await Component.InvokeAsync("Categories") *@
 }
 
 
@@ -42,7 +48,7 @@
 @* Buradaki row direkt renderbody içine yerleşicektir. *@
 
 
-@if(products.Count == 0)
+@* @if(products.Count == 0)
 {
     @await Html.PartialAsync("_noproduct")
 }
@@ -56,4 +62,4 @@ else
             </div>       
         }  
     </div>
-}
+} *@

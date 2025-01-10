@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 // tanımladığımız model içinde bulunan
 // category ve product dosyaları geliyor.
-using shopapp.webui.Models;
+
+//using shopapp.webui.Models;
+using shopapp.entity;
 
 public class ProductViewModel
 {

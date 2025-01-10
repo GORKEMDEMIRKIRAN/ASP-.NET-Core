@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "940EZ8Wlrsxf8UfCfZCqZL6fiLPrMz8Y8g4eceAGNvI=",
+  "Hash": "DyOha0a6j0YuiWjApMerPwdCK9RofJ2AGLhuvoc7E88=",
   "Source": "shopapp.webui",
   "BasePath": "_content/shopapp.webui",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "shopapp.webui\\wwwroot",
       "Source": "shopapp.webui",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\css\\style.css",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\1.jpg",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\1.jpg",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "img/1.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\img\\1.jpg"
     },
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\2.jpg",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\2.jpg",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "img/2.jpg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\img\\2.jpg"
     },
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\3.jpg",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\3.jpg",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "img/3.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\img\\3.jpg"
     },
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\4.jpg",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\4.jpg",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "img/4.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\img\\4.jpg"
     },
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\5.jpg",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\5.jpg",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "img/5.jpg",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\img\\5.jpg"
     },
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\6.jpg",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\6.jpg",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "img/6.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\img\\6.jpg"
     },
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\7.jpg",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\7.jpg",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "img/7.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\img\\7.jpg"
     },
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\slider1.png",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\slider1.png",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "img/slider1.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider1.png"
     },
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\slider2.png",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\slider2.png",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "img/slider2.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\img\\slider2.png"
     },
     {
-      "Identity": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\slider3.png",
+      "Identity": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\img\\slider3.png",
       "SourceId": "shopapp.webui",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\gorke\\Desktop\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.webui\\wwwroot\\",
       "BasePath": "_content/shopapp.webui",
       "RelativePath": "img/slider3.png",
       "AssetKind": "All",

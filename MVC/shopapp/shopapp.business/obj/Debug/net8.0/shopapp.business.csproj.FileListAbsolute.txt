@@ -1,0 +1,12 @@
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\bin\Debug\net8.0\shopapp.business.deps.json
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\bin\Debug\net8.0\shopapp.business.dll
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\bin\Debug\net8.0\shopapp.business.pdb
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\obj\Debug\net8.0\shopapp.business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\obj\Debug\net8.0\shopapp.business.AssemblyInfoInputs.cache
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\obj\Debug\net8.0\shopapp.business.AssemblyInfo.cs
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\obj\Debug\net8.0\shopapp.business.csproj.CoreCompileInputs.cache
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\obj\Debug\net8.0\shopapp.business.sourcelink.json
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\obj\Debug\net8.0\shopapp.business.dll
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\obj\Debug\net8.0\refint\shopapp.business.dll
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\obj\Debug\net8.0\shopapp.business.pdb
+C:\Users\gorke\Desktop\ASP-NET.Core\MVC\shopapp\shopapp.business\obj\Debug\net8.0\ref\shopapp.business.dll

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZMrb73qJV/c=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gorke\\Desktop\\ASP-NET.Core\\MVC\\shopapp\\shopapp.business\\shopapp.business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gorke\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\gorke\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\gorke\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

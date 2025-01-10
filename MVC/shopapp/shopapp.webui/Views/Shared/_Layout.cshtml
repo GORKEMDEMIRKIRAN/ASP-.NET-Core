@@ -31,10 +31,10 @@
 
     
     @await Html.PartialAsync("_navbar")
-    <header>
+    @* <header>
         @await Html.PartialAsync("_header")
-    </header>
-
+    </header> *@
+    @RenderSection("Header",false)
 
 
     <main>
@@ -43,7 +43,7 @@
             @if(IsSectionDefined("Categories"))
             {
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-my-3">
                         @RenderSection("Categories",false)
                     </div>
                     <div class="col-md-9">
@@ -54,7 +54,7 @@
             else{
                 <div class="row">
                     <div class="col-md-12">
-                        @RenderBody()    
+                        @RenderBody()   
                     </div>
                 </div>
             }    
